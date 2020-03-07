@@ -372,7 +372,10 @@ template {
   flex-direction: column;
   justify-content: center;
   padding-top: 100px;
-  background: #131313 url("/img/hero-bg.jpg") no repeat center/cover;
+  background-image: url("/img/hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   height: 100vh;
   color: #ffffff; }
   .hero__conteht {
