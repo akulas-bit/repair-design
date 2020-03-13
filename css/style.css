@@ -378,7 +378,10 @@ template {
 
 .policy__label {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  font-family: FuturaBookC;
+  font-size: 1.142rem;
+  line-height: 1.57rem; }
   .policy__label::before {
     content: '';
     width: 18px;
@@ -652,7 +655,8 @@ img {
     background-position: center;
     border: none;
     margin: 12px;
-    cursor: pointer; }
+    cursor: pointer;
+    outline: none; }
   .modal__title {
     font-family: 'Yeseva One', cursive;
     font-size: 1.357rem;
@@ -663,12 +667,14 @@ img {
     display: flex;
     flex-direction: column; }
   .modal__input {
-    margin-bottom: 3.482rem; }
+    margin-bottom: 3.482rem;
+    outline: none; }
     .modal__input:last-of-type {
       margin-bottom: 1rem; }
   .modal__policy {
     margin-bottom: 2.7rem; }
   .modal__button {
+    outline: none;
     align-self: flex-end; }
 
 @media screen and (max-width: 1440px) {
