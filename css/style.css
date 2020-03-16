@@ -608,7 +608,8 @@ img {
   flex-wrap: wrap; }
   .swiper-slide__text {
     flex-basis: 50%;
-    margin-bottom: 2.42rem; }
+    margin-bottom: 2.42rem;
+    padding-bottom: 2rem; }
   .swiper-slide__heading {
     font-size: 1.285rem;
     line-height: 1.78rem;
@@ -623,6 +624,8 @@ img {
     background-color: #ffffff; }
 
 .swiper-button-prev, .swiper-button-next {
+  bottom: 0;
+  top: auto;
   background-size: 42px;
   width: 42px;
   height: 14px; }
@@ -630,14 +633,19 @@ img {
     display: none; }
 
 .swiper-button-prev {
-  background-image: url("/img/arrow-prev.svg");
+  left: 0;
+  background-image: url("/img/projects/arrow-prev.svg");
   background-position: center;
   background-repeat: no-repeat; }
 
-.swiper-button:next {
-  background-image: url("/img/arrow-next.svg");
+.swiper-button-next {
+  background-image: url("/img/projects/arrow-next.svg");
   background-position: center;
   background-repeat: no-repeat; }
+
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  width: auto;
+  bottom: -2px; }
 
 .types__section-title {
   margin-bottom: 2rem; }
@@ -678,6 +686,12 @@ img {
 
 .design {
   background-color: #131313; }
+  .design .title__description {
+    font-family: FuturaBookC;
+    text-align: center;
+    font-size: 1.42rem;
+    line-height: 1.92rem;
+    max-weight: 53rem; }
   .design__section-title {
     color: #ffffff;
     margin-bottom: 3.1rem; }
@@ -688,8 +702,15 @@ img {
     flex-direction: column;
     align-items: center; }
   .design__pricetag {
-    width: 69%;
-    padding: 1rem 3.75rem; }
+    position: absolute;
+    left: 0;
+    bottom: -1.79rem;
+    font-size: 1.29rem;
+    font-family: 'Yeseva One', cursive;
+    text-transform: uppercase;
+    background-color: #E3B873;
+    color: #ffffff;
+    padding: 1.214rem 2.6rem; }
 
 .modal {
   opacity: 0;
@@ -763,7 +784,9 @@ img {
   .hero__instagram {
     display: none; }
   .hero__content {
-    margin-left: 0; } }
+    margin-left: 0; }
+  .project-block-swiper__block {
+    width: 100%; } }
 
 @media screen and (max-width: 760px) {
   .row {
@@ -796,3 +819,8 @@ img {
 @media screen and (max-height: 520px) {
   .hero__scroll-down {
     display: none; } }
+
+@media screen and (max-height: 325px) {
+  .swiper__block {
+    display: flex;
+    flex-wrap: wrap; } }
