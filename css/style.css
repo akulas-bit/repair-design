@@ -605,10 +605,11 @@ img {
 
 .swiper-slide {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  margin-bottom: 5.79rem; }
   .swiper-slide__text {
-    flex-basis: 50%;
-    margin-bottom: 2.42rem;
+    flex-basis: 35%;
+    margin-bottom: 0;
     padding-bottom: 2rem; }
   .swiper-slide__heading {
     font-size: 1.285rem;
@@ -646,6 +647,12 @@ img {
 .swiper-container-horizontal > .swiper-pagination-bullets {
   width: auto;
   bottom: -2px; }
+
+@media screen and (max-width: 992px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-content: center; } }
 
 .types__section-title {
   margin-bottom: 2rem; }
@@ -687,7 +694,6 @@ img {
 .design {
   background-color: #131313; }
   .design .title__description {
-    font-family: FuturaBookC;
     text-align: center;
     font-size: 1.42rem;
     line-height: 1.92rem;
