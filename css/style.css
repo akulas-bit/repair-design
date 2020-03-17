@@ -651,8 +651,10 @@ img {
 @media screen and (max-width: 992px) {
   .row {
     display: flex;
-    flex-direction: column;
-    align-content: center; } }
+    align-items: center;
+    flex-direction: column; }
+    .row .swiper__block-3 {
+      padding-top: 2.85rem; } }
 
 .types__section-title {
   margin-bottom: 2rem; }
@@ -707,7 +709,9 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center; }
-  .design__pricetag {
+  .design .col-30 {
+    flex-basis: 32%; }
+  .design .card__pricetag {
     position: absolute;
     left: 0;
     bottom: -1.79rem;
@@ -716,7 +720,7 @@ img {
     text-transform: uppercase;
     background-color: #E3B873;
     color: #ffffff;
-    padding: 1.214rem 2.6rem; }
+    padding: 1.214rem 3.8rem; }
 
 .modal {
   opacity: 0;
@@ -780,9 +784,13 @@ img {
 
 @media screen and (max-width: 1440px) {
   html {
-    font-size: 12px; }
+    font-size: 14px; }
   .nav__item {
     margin-right: 1rem; } }
+
+@media screen and (max-width: 1104px) {
+  html {
+    font-size: 12px; } }
 
 @media screen and (max-width: 992px) {
   .nav {
