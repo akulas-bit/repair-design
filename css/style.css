@@ -654,7 +654,14 @@ img {
     align-items: center;
     flex-direction: column; }
     .row .swiper__block-3 {
-      padding-top: 2.85rem; } }
+      width: 100%;
+      padding-top: 2.85rem; }
+    .row .swiper__block-1 {
+      width: 100%; }
+      .row .swiper__block-1 .text__block-1 {
+        margin-right: 2.4rem; }
+      .row .swiper__block-1 .text__block-2 {
+        margin-right: 2.21rem; } }
 
 .types__section-title {
   margin-bottom: 2rem; }
@@ -699,7 +706,8 @@ img {
     text-align: center;
     font-size: 1.42rem;
     line-height: 1.92rem;
-    max-weight: 53rem; }
+    max-width: 53rem;
+    margin: auto; }
   .design__section-title {
     color: #ffffff;
     margin-bottom: 3.1rem; }
