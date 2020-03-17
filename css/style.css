@@ -606,7 +606,7 @@ img {
 .swiper-slide {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 5.79rem; }
+  margin-bottom: 3.85rem; }
   .swiper-slide__text {
     flex-basis: 35%;
     margin-bottom: 0;
@@ -649,6 +649,8 @@ img {
   bottom: -2px; }
 
 @media screen and (max-width: 992px) {
+  .swiper-slide {
+    margin-bottom: 2.20rem; }
   .row {
     display: flex;
     align-items: center;
