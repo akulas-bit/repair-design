@@ -400,6 +400,8 @@ template {
     border-radius: 1px;
     cursor: pointer;
     margin-right: 0.64rem; }
+  .policy__label--center {
+    justify-content: center; }
 
 *, *:before, *:after {
   box-sizing: border-box; }
@@ -720,7 +722,7 @@ img {
   flex-basis: 30%; }
 
 .control__label {
-  margin-bottom: -7px; }
+  margin-bottom: -1px; }
 
 .control__policy {
   display: flex;
@@ -729,11 +731,16 @@ img {
   margin-top: 2.5rem; }
 
 .control__button {
-  padding: 1.2857rem 4.785rem; }
+  padding: 1.2857rem 4.785rem;
+  outline: none; }
 
 .video__play {
   position: relative;
   margin: auto; }
+
+@media screen and (max-width: 520px) {
+  .control {
+    background-color: #131313; } }
 
 .types__section-title {
   margin-bottom: 2rem; }
@@ -801,6 +808,69 @@ img {
     background-color: #E3B873;
     color: #ffffff;
     padding: 1.214rem 3.8rem; }
+
+.footer {
+  background: #131313 url("/img/footer-bg.jpg") center no-repeat;
+  background-size: cover;
+  padding-top: 3rem; }
+  .footer__wrap {
+    background-color: #181818;
+    max-width: 63.07rem;
+    margin: auto;
+    margin-top: -20rem;
+    padding: 2.5rem;
+    margin-bottom: 3.714rem; }
+  .footer__title {
+    text-transform: uppercase;
+    font-family: 'Yeseva One', cursive;
+    font-size: 1.428rem;
+    text-align: center;
+    margin-bottom: 3.214rem;
+    margin-top: 0;
+    margin-right: auto;
+    margin-left: auto;
+    width: 40%; }
+  .footer__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 37.142rem;
+    margin: auto; }
+  .footer__input {
+    outline: none;
+    padding-top: 0.3rem;
+    color: #ffffff; }
+    .footer__input-group {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 45%;
+      margin-bottom: 3.2rem; }
+      .footer__input-group:nth-last-child(3) {
+        flex-basis: 100%;
+        margin-bottom: 2rem; }
+  .footer__policy {
+    flex-basis: 100%;
+    margin-bottom: 3.6rem; }
+  .footer__button {
+    margin: auto;
+    padding: 1.285rem 4.785rem; }
+  .footer__menu {
+    background-color: #131313;
+    padding: 4.285rem 0; }
+  .footer__map {
+    margin: auto;
+    margin-bottom: 4rem;
+    max-width: 66.07rem;
+    height: 33.21rem; }
+  .footer__contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3.071rem;
+    margin-top: -1.34rem;
+    margin-right: -0.5rem; }
+    .footer__contacts--primary {
+      margin-right: 1rem; }
 
 .modal {
   opacity: 0;
