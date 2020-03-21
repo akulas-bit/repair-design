@@ -67,10 +67,39 @@
     margin: auto
 
 @media screen and ( max-width: 992px  )
-  .container
-    display: flex
-    flex-direction: column
-    
-    .element-7
+  .control
+  
+    background-color: $dark
+    &__form
+      flex-direction: column
+    &__input-group
+      color: $secondary  
+    &__button
       order: 1
+      margin-top: 4.45rem
+      
+      margin-top: 5.71rem
+    &__text
+      max-width: 24.28rem
+      min-height: 10.14rem
+      font-size: 1rem
+      color: $light
+      margin-bottom: 3.21rem  
+    &__box-1
+      padding-bottom: 6.5rem
+      color: $light
+    &__input
+      &::-webkit-input-placeholder
+        color: $light  
     
+    .video
+      margin-bottom: 2rem
+      &__play
+        
+
+    &__policy
+      justify-content: flex-start
+      margin-top: 2.02rem 
+      color: $light
+     
+
