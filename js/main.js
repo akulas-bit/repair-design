@@ -110,7 +110,7 @@ $(document).ready(function () {
         required: true,
         minlength: 16,
       },
-    }
+    },
     messages: {
       userName: {
         required: "Имя обязательно!",
