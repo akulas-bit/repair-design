@@ -920,6 +920,9 @@ img {
     justify-content: flex-start; }
   .footer__policy {
     margin-bottom: 4.8rem; }
+  .form__block {
+    display: flex;
+    flex-direction: column; }
   .text-map {
     display: flex;
     flex-direction: column; }
@@ -1004,11 +1007,26 @@ img {
   .modal__input {
     display: flex;
     flex-direction: column; }
-    .modal__input__group {
-      margin-bottom: 3.482rem;
-      outline: none; }
-    .modal__input:last-of-type {
-      margin-bottom: 1rem; }
+  .modal .modal__input::-webkit-input-placeholder {
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff; }
+  .modal .modal__input::-moz-placeholder {
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff; }
+  .modal .modal__input:-ms-input-placeholder {
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff; }
+  .modal .modal__input::-ms-input-placeholder {
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff; }
+  .modal .modal__input::placeholder {
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff; }
+  .modal .modal__input__group {
+    margin-bottom: 3.482rem;
+    outline: none; }
+  .modal .modal__input:last-of-type {
+    margin-bottom: 1rem; }
   .modal__policy {
     margin-bottom: 2.7rem; }
   .modal__button {
