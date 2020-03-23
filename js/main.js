@@ -50,5 +50,115 @@ $(document).ready(function () {
   bullets.css('left', prev.width() + 10)
 
   new WOW().init()
+
+
+  
+  $('.modal__form').validate({
+    errorClass: "invalid",
+    rules: {
+      
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15,
+      },
+      userPhone: {
+        required: true,
+        minlength: 16,
+      },
+      
+      userEmail: {
+        required: true,
+        email: true,
+      },
+    }, 
+    messages: {
+      userName: {
+        required: "Имя обязательно!",
+        minlength: "Имя не короче двух букв",
+        maxlength: "Имя не более 15 символов",
+      },
+      userPhone: {
+        required: "Телефон обязателен!",
+        minlength: "Телефон в формате: +7(000)00-00-000",
+      },
+      userEmail: {
+        required: "Email обязателен!",
+        email: "Введите корректный email",
+      }
+    }
+
+  });
+
+  // 
+  $('[type=tel]').mask('+7(000)00-00-000', {
+    placeholder: "+7(__) __-__-___"
+  });
+
+
+  
+  $('.control__form').validate({
+    errorClass: "invalid",
+    rules: {
+      
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15,
+      },
+      userPhone: {
+        required: true,
+        minlength: 16,
+      },
+    }
+    messages: {
+      userName: {
+        required: "Имя обязательно!",
+        minlength: "Имя не короче двух букв",
+        maxlength: "Имя не более 15 символов",
+      },
+      userPhone: {
+        required: "Телефон обязателен!",
+        minlength: "Телефон в формате: +7(000)00-00-000",
+      }
+    }
+
+  });
+
+  
+  $('.footer__form').validate({
+    errorClass: "invalid",
+    rules: {
+      
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15,
+      },
+      userPhone: {
+        required: true,
+        minlength: 16,
+      },
+      
+      userQuestion: {
+        required: true
+      },
+    },
+    messages: {
+      userName: {
+        required: "Имя обязательно!",
+        minlength: "Имя не короче двух букв",
+        maxlength: "Имя не более 15 символов",
+      },
+      userPhone: {
+        required: "Телефон обязателен!",
+        minlength: "Телефон в формате: +7(000)00-00-000",
+      },
+      userQuestion: {
+        required: "Задайте вопрос",
+      }
+    }
+
+  });
   
 });

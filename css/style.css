@@ -404,6 +404,12 @@ template {
   .policy__label--center {
     justify-content: center; }
 
+label.invalid {
+  color: tomato; }
+
+input.invalid {
+  border-bottom: 1px solid tomato; }
+
 *, *:before, *:after {
   box-sizing: border-box; }
 
@@ -885,8 +891,7 @@ img {
     flex-basis: 100%;
     margin-bottom: 3.6rem; }
   .footer__button {
-    margin: auto;
-    padding: 1.285rem 4.785rem; }
+    padding: 1.885rem 16.785rem; }
   .footer__menu {
     background-color: #131313;
     padding: 4.285rem 0; }
@@ -906,15 +911,46 @@ img {
       margin-right: 1rem; }
 
 @media screen and (max-width: 992px) {
+  .footer {
+    background: #131313;
+    padding-top: 0.1rem; }
   .footer__form {
     display: flex;
     flex-direction: column;
     justify-content: flex-start; }
+  .footer__policy {
+    margin-bottom: 4.8rem; }
   .text-map {
     display: flex;
     flex-direction: column; }
-    .text-map .map {
-      order: -1; } }
+    .text-map .map__block {
+      order: -1; }
+  .footer__input::-webkit-input-placeholder {
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff; }
+  .btn-check {
+    justify-content: flex-start;
+    color: #ffffff; }
+  .footer__input-group {
+    margin-bottom: 4.5rem; }
+  __button {
+    justify-content: flex-start; }
+  .input__group-box {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 45%;
+    margin-bottom: 3.2rem; }
+    .input__group-box:nth-last-child(3) {
+      flex-basis: 100%;
+      margin-bottom: 0.1rem; }
+  .footer__title {
+    padding-top: 4.6rem;
+    min-width: 60%; }
+  .footer-icon {
+    width: 39px;
+    height: 39px; }
+  .footer__menu {
+    display: none; } }
 
 .modal {
   opacity: 0;
@@ -966,8 +1002,11 @@ img {
     display: flex;
     flex-direction: column; }
   .modal__input {
-    margin-bottom: 3.482rem;
-    outline: none; }
+    display: flex;
+    flex-direction: column; }
+    .modal__input__group {
+      margin-bottom: 3.482rem;
+      outline: none; }
     .modal__input:last-of-type {
       margin-bottom: 1rem; }
   .modal__policy {

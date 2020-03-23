@@ -37,12 +37,13 @@
       &:nth-last-child(3)
         flex-basis: 100%
         margin-bottom: 2rem
+      
   &__policy
     flex-basis: 100%
     margin-bottom: 3.6rem
   &__button
-    margin: auto
-    padding: 1.285rem 4.785rem
+    margin: 
+    padding: 1.885rem 16.785rem
   &__menu
     background-color: $dark
     padding: 4.285rem 0
@@ -63,7 +64,13 @@
     &--primary
       margin-right: 1rem
 
+
+
+
 @media screen and ( max-width: 992px  )
+  .footer
+    background: $dark
+    padding-top: 0.1rem
   .footer__form
     display: flex
     flex-direction: column
@@ -71,11 +78,46 @@
 
     
   .footer__policy
+    margin-bottom: 4.8rem
 
   .text-map
     display: flex
     flex-direction: column
-    .map
+    .map__block
       order: -1
+  .footer__input
+      &::-webkit-input-placeholder
+        color: $light
+        border-bottom: 1px solid $light
+
+  .btn-check
+    justify-content: flex-start
+    color: $light
+    
+  .footer__input-group
+    margin-bottom: 4.5rem    
+    
+  &__button
+    justify-content: flex-start 
+  .input__group-box
+      display: flex
+      flex-direction: column
+      flex-basis: 45%
+      margin-bottom: 3.2rem
+      &:nth-last-child(3)
+        flex-basis: 100%
+        margin-bottom: 0.1rem
+  .footer__title
+    padding-top: 4.6rem
+    min-width: 60%
+  .footer-icon
+    width: 39px
+    height: 39px 
+
+
+  .footer__menu
+    display: none
+
+      
 
   
