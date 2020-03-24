@@ -922,7 +922,7 @@ img {
     margin-bottom: 4.8rem; }
   .form__block {
     display: flex;
-    flex-direction: column; }
+    align-items: center; }
   .text-map {
     display: flex;
     flex-direction: column; }
@@ -954,6 +954,10 @@ img {
     height: 39px; }
   .footer__menu {
     display: none; } }
+
+@media screen and (max-width: 576px) {
+  __button {
+    padding: 0.485rem 4.785rem; } }
 
 .modal {
   opacity: 0;
