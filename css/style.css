@@ -410,6 +410,10 @@ label.invalid {
 input.invalid {
   border-bottom: 1px solid tomato; }
 
+@media screen and (max-width: 992px) {
+  .input {
+    border-bottom: 1px solid #ffffff; } }
+
 *, *:before, *:after {
   box-sizing: border-box; }
 
@@ -760,7 +764,7 @@ img {
     .control__button {
       order: 1s;
       margin-bottom: -10.5rem;
-      width: 26rem;
+      width: 22rem;
       height: 4.5rem;
       margin-top: 5.71rem; }
     .control__text {
@@ -772,8 +776,7 @@ img {
     .control__box-1 {
       color: #ffffff; }
     .control__input::-webkit-input-placeholder {
-      color: #ffffff;
-      border-bottom: 1px solid #ffffff; }
+      color: #ffffff; }
     .control .video {
       margin-bottom: 2rem; }
     .control__policy {
@@ -933,8 +936,7 @@ img {
     .text-map .map__block {
       order: -1; }
   .footer__input::-webkit-input-placeholder {
-    color: #ffffff;
-    border-bottom: 1px solid #ffffff; }
+    color: #ffffff; }
   .btn-check {
     justify-content: flex-start;
     color: #ffffff; }
@@ -960,6 +962,14 @@ img {
     padding: 1.885rem 9.785rem; }
   .footer__menu {
     display: none; } }
+
+@media screen and (max-width: 425px) {
+  .footer__form {
+    flex-direction: column; }
+  .footer__wrap {
+    padding: 0rem;
+    background-color: #131313;
+    margin-left: 1rem; } }
 
 .modal {
   opacity: 0;
@@ -1014,20 +1024,15 @@ img {
     display: flex;
     flex-direction: column; }
   .modal .modal__input::-webkit-input-placeholder {
-    color: #ffffff;
-    border-bottom: 1px solid #ffffff; }
+    color: #ffffff; }
   .modal .modal__input::-moz-placeholder {
-    color: #ffffff;
-    border-bottom: 1px solid #ffffff; }
+    color: #ffffff; }
   .modal .modal__input:-ms-input-placeholder {
-    color: #ffffff;
-    border-bottom: 1px solid #ffffff; }
+    color: #ffffff; }
   .modal .modal__input::-ms-input-placeholder {
-    color: #ffffff;
-    border-bottom: 1px solid #ffffff; }
+    color: #ffffff; }
   .modal .modal__input::placeholder {
-    color: #ffffff;
-    border-bottom: 1px solid #ffffff; }
+    color: #ffffff; }
   .modal .modal__input__group {
     margin-bottom: 3.482rem;
     outline: none; }
