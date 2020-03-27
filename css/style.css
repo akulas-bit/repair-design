@@ -754,11 +754,13 @@ img {
     .control__form {
       flex-direction: column; }
     .control__input-group {
+      display: flex;
+      flex-direction: column;
       color: #959595; }
     .control__button {
-      order: 1;
-      margin-bottom: -7.5rem;
-      width: 39rem;
+      order: 1s;
+      margin-bottom: -10.5rem;
+      width: 26rem;
       height: 4.5rem;
       margin-top: 5.71rem; }
     .control__text {
@@ -916,13 +918,12 @@ img {
     padding-top: 0.1rem; }
   .footer__form {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start; }
+    justify-content: flex-start;
+    padding: 1.885rem 9.785rem;
+    max-width: 37.142rem;
+    margin: auto; }
   .footer__policy {
     margin-bottom: 4.8rem; }
-  .form__block {
-    display: flex;
-    align-items: center; }
   .text-map {
     display: flex;
     flex-direction: column; }
@@ -954,10 +955,6 @@ img {
     height: 39px; }
   .footer__menu {
     display: none; } }
-
-@media screen and (max-width: 576px) {
-  __button {
-    padding: 0.485rem 4.785rem; } }
 
 .modal {
   opacity: 0;
@@ -1036,6 +1033,10 @@ img {
   .modal__button {
     outline: none;
     align-self: flex-end; }
+
+.modal__input-group {
+  display: flex;
+  flex-direction: column; }
 
 @media screen and (max-width: 1440px) {
   html {
