@@ -919,8 +919,6 @@ img {
   .footer {
     background: #131313;
     padding-top: 0.1rem; }
-  .footer__cont {
-    margin-left: 0rem; }
   .footer__form {
     display: flex;
     justify-content: flex-start;
